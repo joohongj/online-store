@@ -166,14 +166,20 @@ footer a:hover,
   transform: scale(1.2);
 }
 
-
+.button {
+  display: grid;
+  place-items: center;
+  margin-bottom: 10em;
+  margin-top: 2em;
+}
 
 .cart {
   color: rgb(103, 20, 20);
   font-family: "Amatic SC", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-left: 100px;
+  text-align: center;
+  margin-top: 2em;
 
 }
 
@@ -183,8 +189,6 @@ footer a:hover,
   font-weight: 600;
   font-style: normal;
   font-size: x-large;
-  margin-left: 140px;
-  margin-bottom: 30px;
 
 }
 
