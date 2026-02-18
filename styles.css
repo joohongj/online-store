@@ -166,11 +166,14 @@ footer a:hover,
   transform: scale(1.2);
 }
 
-.button {
+a.button {
   display: grid;
   place-items: center;
   margin-bottom: 10em;
   margin-top: 2em;
+  /* outline: none;
+  border: 0; */
+  /* these don't seem to work here */
 }
 
 .cart {
