@@ -1,0 +1,205 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper {
+  width: 85%;
+  margin: auto;
+  font-family: "Zen Loop", cursive;
+  font-weight: 600;
+  font-style: normal;
+  color: indianred;
+}
+
+.logo img {
+  position: relative;
+  width: 30px;
+  animation: wiggle 2s ease-in-out;
+
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(30deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+header {
+  background-color: rgb(242, 226, 226);
+}
+
+header h1 {
+  text-align: center;
+  padding: 40px 0px 50px 0px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+  color: rgb(103, 20, 20);
+}
+
+span {
+  color: rgb(201, 132, 132);
+  font-family: "Nanum Brush Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  padding: 50px 40px 30px 50px;
+  gap: 3%;
+  /* whenever I add gap the first row of gallery adds extra padding on left??? */
+  flex-wrap: wrap;
+
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4,
+.photo5,
+.photo6,
+.photo7,
+.photo8,
+.photo9,
+.photo10,
+.photo11,
+.photo12,
+.photo13 {
+  width: 300px;
+  height: 480px;
+  background-color: white;
+  margin-right: 30px;
+  border: 1.5px solid rgb(235, 227, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo1 img,
+.photo2 img,
+.photo3 img,
+.photo4 img,
+.photo5 img,
+.photo6 img,
+.photo7 img,
+.photo8 img,
+.photo9 img,
+.photo10 img,
+.photo11 img,
+.photo12 img,
+.photo13 img {
+  width: 85%;
+  margin: auto;
+}
+
+h4 {
+  text-align: center;
+  padding: 20px;
+}
+
+.photo1 img:hover,
+.photo2 img:hover,
+.photo3 img:hover,
+.photo4 img:hover,
+.photo5 img:hover,
+.photo6 img:hover,
+.photo7 img:hover,
+.photo8 img:hover,
+.photo9 img:hover,
+.photo10 img:hover,
+.photo11 img:hover,
+.photo12 img:hover,
+.photo13 img:hover {
+  opacity: 0.7;
+}
+
+
+footer {
+  background-color: rgb(242, 226, 226);
+  padding: 30px 40px 30px 40px;
+  text-align: center;
+  color: rgb(103, 20, 20);
+}
+
+.instagram img {
+  width: 15px;
+}
+
+footer a,
+footer p {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+
+footer a:hover,
+.instagram:hover {
+  color: indianred;
+  transform: scale(1.2);
+}
+
+
+
+.cart {
+  color: rgb(103, 20, 20);
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 100px;
+
+}
+
+.go-back {
+  color: rgb(103, 20, 20);
+  font-family: "Zen Loop", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: x-large;
+  margin-left: 140px;
+  margin-bottom: 30px;
+
+}
+
+.glyphicon {
+  color: rgb(42, 135, 205);
+}
+
+.glyphicon:hover {
+  transform: scale(1.2);
+}
+
+/* screen size */
+@media only screen and (max-width:600px) {
+  .container {
+    flex-direction: column;
+    text-align: center
+  }
+}
